@@ -91,26 +91,22 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <figure className="photo" style={{ margin: '0 auto' }}>
-          <div className={`photo-box ${photoOk ? 'has' : ''}`}>
-            {photoOk
-              ? <img src={photoSrc} alt="Portrait of Iswarya S" width="380" height="475" onError={photoFailed} />
-              : <div>
-                  <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" /></svg>
-                  <strong>Your photo goes here</strong>
-                  <span className="mono">Add public/profile.jpg or choose an image below</span>
-                </div>}
-          </div>
-          <figcaption className="photo-cap mono"><span>Iswarya S</span><span>{profile.location.split(',')[0]}</span></figcaption>
-          <div className="photo-controls">
-            <button className="btn btn-ghost btn-sm" type="button" onClick={() => fileRef.current?.click()}>
-              <Upload />{customPhoto ? 'Replace photo' : 'Upload photo'}
-            </button>
-            {customPhoto && <button className="btn btn-ghost btn-sm" type="button" onClick={resetPhoto}><Reset />Reset</button>}
-            <input ref={fileRef} type="file" accept="image/png,image/jpeg,image/webp" onChange={pickPhoto} className="sr-only" aria-label="Choose a profile photograph" />
-          </div>
-          {photoMsg && <p className="photo-msg mono" role="status">{photoMsg}</p>}
-        </figure>
+        
+<figure className="profile-photo">
+  <div className="photo-frame">
+    <img
+      src="/profile.jpg"
+      alt="Iswarya S"
+      className="profile-image"
+    />
+  </div>
+
+  <figcaption className="photo-cap mono">
+    <span>Iswarya S</span>
+    <span>{profile.location.split(',')[0]}</span>
+  </figcaption>
+</figure>
+
       </div>
     </section>
   )

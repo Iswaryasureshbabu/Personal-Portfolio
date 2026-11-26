@@ -64,7 +64,7 @@ export const projects = [
     category: 'Web Development',
     desc: 'A digital recipe book that preserves and showcases traditional Tamil Nadu recipes. Recipes are organised by regional cuisine, ingredients and preparation methods so users can explore and learn traditional cooking.',
     tech: ['Java', 'Spring Boot', 'Vaadin', 'HTML', 'CSS'],
-    image: 'projects/mann-manam.svg',
+    image: 'projects/mann-manam.png',
     imageAlt: 'Mann Manam project cover',
     github: 'https://github.com/Iswaryasureshbabu/Mann_Manam',
     demo: null,
@@ -76,7 +76,7 @@ export const projects = [
     category: 'Full Stack',
     desc: 'A responsive e-commerce website for traditional food products with Tamil and English language support. Includes user-friendly navigation, organised product categories and an accessible shopping experience.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL'],
-    image: 'projects/magizham.svg',
+    image: 'projects/magizham.png',
     imageAlt: 'Magizham project cover',
     github: 'https://github.com/Iswaryasureshbabu/Magizham-food-products',
     demo: null,
@@ -97,7 +97,7 @@ export const projects = [
   {
     id: 'personal-portfolio',
     title: 'Personal Portfolio Website',
-    category: 'UI/UX',
+    category: 'Web Development',
     desc: 'A responsive portfolio website that showcases projects, technical skills and internship experience. Built with a clean, professional layout, intuitive navigation and light and dark themes.',
     tech: ['React', 'HTML', 'CSS', 'JavaScript'],
     image: 'projects/personal-portfolio.png',
@@ -108,19 +108,39 @@ export const projects = [
   },
 ]
 
-export const projectFilters = ['All', 'Web Development', 'Full Stack', 'UI/UX']
+export const projectFilters = ['All', 'Web Development', 'Full Stack']
+
 
 export const experience = [
   {
+    role: 'Frontend Developer Intern',
+    org: 'CodeAlpha',
+    meta: 'Virtual Internship | 1 Month',
+    points: [
+      'Developed responsive web interfaces using HTML, CSS and JavaScript.',
+      'Built interactive and user-friendly web pages.',
+    ],
+  },
+  {
     role: 'UI/UX Designer Intern',
-    org: 'Least Action Technologies',
+    org: 'Lease Action Technologies',
     meta: 'June 02, 2026 – July 02, 2026',
     points: [
       'Designed user-centered interfaces for web and mobile applications.',
       'Applied UI/UX principles to improve usability, navigation and visual consistency.',
     ],
   },
+  {
+    role: 'UI/UX Designer Intern',
+    org: 'SkillCraft Technology',
+    meta: 'Virtual Internship | 1 Month',
+    points: [
+      'Created wireframes and prototypes using Figma.',
+      'Focused on user-friendly layouts and consistent design elements.',
+    ],
+  },
 ]
+
 
 export const certs = [
   {
