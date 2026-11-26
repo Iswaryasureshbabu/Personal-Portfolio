@@ -94,11 +94,11 @@ export default function Hero() {
         
 <figure className="profile-photo">
   <div className="photo-frame">
-    <img
-      src="/profile.jpg"
-      alt="Iswarya S"
-      className="profile-image"
-    />
+   <img
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Iswarya S"
+  className="profile-image"
+/>
   </div>
 
   <figcaption className="photo-cap mono">

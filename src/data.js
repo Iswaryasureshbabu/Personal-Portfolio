@@ -91,7 +91,7 @@ export const projects = [
     image: 'projects/lab-test-analyzer.png',
     imageAlt: 'Lab Test Analyzer landing page screenshot',
     github: 'https://github.com/Iswaryasureshbabu/lab-test-analyzer',
-    demo: 'https://lab-test-analyzer-dusky.vercel.app',
+
     note: 'Educational software project — not a certified medical diagnostic tool.',
   },
   {
